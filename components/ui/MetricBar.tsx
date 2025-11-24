@@ -6,7 +6,11 @@ interface MetricBarProps {
   color: string;
 }
 
-export const MetricBar: React.FC<MetricBarProps> = ({ label, value, color }) => (
+export const MetricBar: React.FC<MetricBarProps> = ({
+  label,
+  value,
+  color,
+}) => (
   <div className="space-y-1.5">
     <div className="flex justify-between items-center">
       <span className="text-xs font-mono text-gray-500">{label}</span>

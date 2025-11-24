@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Cloud Computing Portfolio | Ken Patrick Garcia",
   description:
     "DevOps and Cloud Infrastructure Portfolio showcasing AWS, Docker, Kubernetes, and production deployments by Ken Patrick Garcia",
+  icons: {
+    icon: "/clouds-cloud-svgrepo-com.svg",
+  },
 };
 
 export default function RootLayout({

@@ -16,7 +16,7 @@ export interface Project {
   demoUrl: string;
   githubUrl: string;
   description: string;
-  metrics: {
+  metrics?: {
     cpu: number;
     memory: number;
     disk: number;

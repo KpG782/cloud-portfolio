@@ -28,27 +28,32 @@ This Next.js application serves as a **DevOps-themed monitoring dashboard** show
 ## 🚀 Live Deployments
 
 ### 1. **Designers' Cafe** (AWS)
+
 - **URL**: http://3.106.231.215:8081
 - **Stack**: Astro, Node.js, PostgreSQL
 - **Infrastructure**: EC2 (t2.micro), S3, RDS
 - **Region**: ap-southeast-2 (Sydney)
 
 ### 2. **SpringBoot REST API** (Easypanel)
+
 - **URL**: https://springboot-app.kygozf.easypanel.host
 - **Stack**: Java 21, Spring Boot 3.5, Maven, H2
 - **Features**: Multi-stage Docker, health monitoring, Let's Encrypt SSL
 
 ### 3. **kubectl.dev** (Easypanel)
+
 - **URL**: https://certificate-kubectldev.kygozf.easypanel.host
 - **Stack**: Next.js 16, TypeScript, Tailwind v4
 - **Theme**: Terminal UI with K8s tutorials (Minikube, kubectl)
 
 ### 4. **CertifiKit** (Easypanel)
+
 - **URL**: https://certificate-certifikit.kygozf.easypanel.host
 - **Stack**: Next.js 14, PostgreSQL, n8n
 - **Features**: Certificate generator with drag-and-drop editor
 
 ### 5. **ContainerQuest** (Easypanel)
+
 - **URL**: https://certificate-container-quest.kygozf.easypanel.host
 - **Stack**: Next.js 14, TypeScript, Tailwind CSS
 - **Content**: 10 research-backed quiz questions on containers vs VMs
@@ -58,6 +63,7 @@ This Next.js application serves as a **DevOps-themed monitoring dashboard** show
 ## ✨ Dashboard Features
 
 ### DevOps Monitoring Theme
+
 - **Grafana/DataDog Inspired**: Dark theme with monitoring aesthetics
 - **Real-time Metrics**: CPU, Memory, Disk I/O visualization
 - **Live Clock**: Updates every second (hydration-safe)
@@ -65,6 +71,7 @@ This Next.js application serves as a **DevOps-themed monitoring dashboard** show
 - **Infrastructure Overview**: AWS, Docker, and VPS statistics
 
 ### Technical Highlights
+
 - **Server Components**: Optimized Next.js 16 App Router
 - **Type Safety**: Full TypeScript with strict mode
 - **Responsive Design**: Mobile-first approach
@@ -76,6 +83,7 @@ This Next.js application serves as a **DevOps-themed monitoring dashboard** show
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript 5.6
 - **Styling**: Tailwind CSS v4
@@ -83,6 +91,7 @@ This Next.js application serves as a **DevOps-themed monitoring dashboard** show
 - **Fonts**: Geist Sans & Geist Mono
 
 ### DevOps & Infrastructure
+
 - **Cloud**: AWS (EC2, S3, RDS)
 - **Containers**: Docker with multi-stage builds
 - **Orchestration**: Easypanel on VPS
@@ -93,6 +102,7 @@ This Next.js application serves as a **DevOps-themed monitoring dashboard** show
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+
 - npm, yarn, pnpm, or bun
 
@@ -143,26 +153,28 @@ website/
 
 ## 📊 Infrastructure Stats
 
-| Metric | Value |
-|--------|-------|
-| **Total Services** | 5 |
-| **AWS Projects** | 1 (Designers' Cafe) |
-| **Docker Containers** | 4 (Easypanel VPS) |
-| **Average Uptime** | 99.8% |
-| **Average Response** | 142ms |
-| **Monthly Cost** | ~$2.00 |
+| Metric                | Value               |
+| --------------------- | ------------------- |
+| **Total Services**    | 5                   |
+| **AWS Projects**      | 1 (Designers' Cafe) |
+| **Docker Containers** | 4 (Easypanel VPS)   |
+| **Average Uptime**    | 99.8%               |
+| **Average Response**  | 142ms               |
+| **Monthly Cost**      | ~$2.00              |
 
 ---
 
 ## 🎨 Design Features
 
 ### Monitoring Dashboard
+
 - **Dark Theme**: `#0b0d11` background (GitHub-inspired)
 - **Card System**: `#161b22` with subtle borders
 - **Color Coding**: Status indicators and metric gradients
 - **Typography**: Monospace fonts for technical data
 
 ### Components
+
 - **Status Indicators**: Animated pulse for operational services
 - **Metric Bars**: Progress bars with gradient fills
 - **Info Cards**: Infrastructure breakdown by provider
@@ -173,18 +185,21 @@ website/
 ## 💡 Key Learning Outcomes
 
 ### Cloud Computing
+
 - ✅ AWS three-tier architecture (EC2, S3, RDS)
 - ✅ VPS deployment and management
 - ✅ Cost optimization strategies
 - ✅ Multi-cloud infrastructure
 
 ### DevOps Practices
+
 - ✅ Docker containerization and multi-stage builds
 - ✅ CI/CD with GitHub integration
 - ✅ SSL/TLS automation (Let's Encrypt)
 - ✅ Health monitoring and logging
 
 ### Full-Stack Development
+
 - ✅ Next.js 16 with App Router
 - ✅ TypeScript type safety
 - ✅ Responsive design patterns

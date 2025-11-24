@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { Sidebar } from "@/components/sections/Sidebar";
 import { Header } from "@/components/sections/Header";
 import { StatsGrid } from "@/components/sections/StatsGrid";
 import { InfrastructureOverview } from "@/components/sections/InfrastructureOverview";
@@ -21,18 +22,29 @@ export default function CloudPortfolioDashboard() {
   const formattedTime = currentTime.toLocaleTimeString();
 
   return (
-    <div className="min-h-screen bg-[#0b0d11] text-white">
-      <Header currentTime={formattedTime} mounted={mounted} />
+    <div id="top" className="min-h-screen bg-[#0b0d11] text-white">
+      <Sidebar />
+      <div className="ml-20">
+        <Header currentTime={formattedTime} mounted={mounted} />
 
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-8 py-6 space-y-6">
-        <StatsGrid stats={stats} />
-        <InfrastructureOverview />
-        <ServicesDashboard
-          projects={projects}
-          currentTime={formattedTime}
-          mounted={mounted}
-        />
-        <FooterSummary />
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-8 py-8 space-y-10">
+          <div id="stats">
+            <StatsGrid stats={stats} />
+          </div>
+          <div id="infrastructure">
+            <InfrastructureOverview />
+          </div>
+          <div id="services">
+            <ServicesDashboard
+              projects={projects}
+              currentTime={formattedTime}
+              mounted={mounted}
+            />
+          </div>
+          <div id="footer">
+            <FooterSummary />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { BarChart3, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 interface HeaderProps {
   currentTime: string;
@@ -14,8 +15,14 @@ export const Header: React.FC<HeaderProps> = ({ currentTime, mounted }) => {
       <div className="max-w-[1600px] mx-auto px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-lg bg-linear-to-br from-orange-500 via-red-500 to-pink-500 flex items-center justify-center">
-              <BarChart3 className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 rounded-xl bg-linear-to-br from-blue-500 via-cyan-500 to-teal-500 flex items-center justify-center shadow-lg">
+              <Image
+                src="/clouds-cloud-svgrepo-com.svg"
+                alt="Cloud"
+                width={28}
+                height={28}
+                className="brightness-0 invert"
+              />
             </div>
             <div>
               <h1 className="text-xl font-semibold text-gray-100">
