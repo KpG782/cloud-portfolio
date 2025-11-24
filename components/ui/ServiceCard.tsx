@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, MapPin, Clock, Activity } from "lucide-react";
+import { ExternalLink, MapPin, TrendingUp, Zap, DollarSign } from "lucide-react";
 import { Project } from "@/lib/types";
 import { StatusIndicator } from "./StatusIndicator";
 
@@ -79,11 +79,11 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ project }) => {
       </div>
 
       {/* Footer Stats */}
-      <div className="grid grid-cols-3 gap-4 py-4 border-t border-gray-800/50 mb-5">
+      <div className="grid grid-cols-4 gap-3 py-4 border-t border-gray-800/50 mb-5">
         <div className="text-center">
           <div className="flex items-center justify-center gap-1 mb-1">
             <MapPin className="w-3 h-3 text-gray-500" />
-            <p className="text-xs font-mono text-gray-500">Location</p>
+            <p className="text-xs font-mono text-gray-500">Region</p>
           </div>
           <p className="text-xs font-semibold text-gray-300">
             {project.region}
@@ -91,7 +91,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ project }) => {
         </div>
         <div className="text-center">
           <div className="flex items-center justify-center gap-1 mb-1">
-            <Clock className="w-3 h-3 text-gray-500" />
+            <TrendingUp className="w-3 h-3 text-green-500" />
             <p className="text-xs font-mono text-gray-500">Uptime</p>
           </div>
           <p className="text-xs font-semibold text-green-500">
@@ -100,11 +100,20 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ project }) => {
         </div>
         <div className="text-center">
           <div className="flex items-center justify-center gap-1 mb-1">
-            <Activity className="w-3 h-3 text-gray-500" />
+            <Zap className="w-3 h-3 text-blue-500" />
             <p className="text-xs font-mono text-gray-500">Response</p>
           </div>
           <p className="text-xs font-semibold text-blue-500">
             {project.responseTime}
+          </p>
+        </div>
+        <div className="text-center">
+          <div className="flex items-center justify-center gap-1 mb-1">
+            <DollarSign className="w-3 h-3 text-orange-500" />
+            <p className="text-xs font-mono text-gray-500">Cost</p>
+          </div>
+          <p className="text-xs font-semibold text-orange-500">
+            {project.cost}
           </p>
         </div>
       </div>

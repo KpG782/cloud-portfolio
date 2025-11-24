@@ -19,7 +19,13 @@ export default function CloudPortfolioDashboard() {
     return () => clearInterval(timer);
   }, []);
 
-  const formattedTime = currentTime.toLocaleTimeString();
+  const formattedTime = currentTime.toLocaleTimeString('en-US', {
+    timeZone: 'Asia/Manila',
+    hour12: true,
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  });
 
   return (
     <div id="top" className="min-h-screen bg-[#0b0d11] text-white">
