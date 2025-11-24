@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   Server,
   Cloud,
@@ -72,8 +73,14 @@ export const FooterSummary: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
             {/* Profile Section */}
             <div className="shrink-0">
-              <div className="w-24 h-24 rounded-full bg-linear-to-br from-orange-500 via-purple-500 to-blue-500 flex items-center justify-center text-4xl font-bold text-white shadow-lg">
-                KG
+              <div className="relative w-24 h-24 rounded-full overflow-hidden ring-4 ring-blue-500/20 shadow-xl">
+                <Image
+                  src="/ken.jpg"
+                  alt="Ken Patrick Garcia"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
 
