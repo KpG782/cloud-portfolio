@@ -1,68 +1,49 @@
 import React from "react";
 import Image from "next/image";
-import {
-  Server,
-  Cloud,
-  Container,
-  DollarSign,
-  Mail,
-  Globe,
-} from "lucide-react";
+import { Mail, Globe } from "lucide-react";
 
 export const FooterSummary: React.FC = () => {
   return (
     <>
-      {/* Infrastructure Summary */}
-      <div className="bg-linear-to-br from-orange-500/10 via-purple-500/10 to-blue-500/10 border border-gray-800/50 rounded-lg p-6">
-        <div className="text-center space-y-4">
-          <h3 className="text-2xl font-bold bg-linear-to-r from-orange-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Multi-Cloud Production Infrastructure
+      {/* Acknowledgment Section */}
+      <div className="bg-linear-to-br from-blue-500/5 via-cyan-500/5 to-blue-500/5 border border-blue-500/20 rounded-lg p-8">
+        <div className="max-w-3xl mx-auto text-center space-y-4">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-500/10 border border-blue-500/20 mb-4">
+            <svg
+              className="w-8 h-8 text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              />
+            </svg>
+          </div>
+          <h3 className="text-2xl font-bold text-gray-100">
+            Special Thanks
           </h3>
-          <p className="text-base text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Production infrastructure with AWS cloud deployment (EC2, S3, RDS)
-            and Easypanel VPS hosting 4 Dockerized applications with automated
-            SSL and monitoring
+          <p className="text-base text-gray-400 leading-relaxed">
+            Grateful acknowledgment to{" "}
+            <a
+              href="https://www.linkedin.com/in/ninonarido/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 font-semibold underline decoration-blue-500/30 hover:decoration-blue-400/50 transition-all"
+            >
+              Professor Nino Narido
+            </a>{" "}
+            for his exceptional guidance in Cloud Computing. His expertise in
+            cloud infrastructure, DevOps practices, and modern deployment
+            strategies made this portfolio possible.
           </p>
-          <div className="flex items-center justify-center gap-6 pt-4 flex-wrap">
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <Server className="w-5 h-5 text-orange-500" />
-                <span className="text-sm font-mono text-gray-500">
-                  Projects
-                </span>
-              </div>
-              <p className="text-2xl font-bold text-gray-100">5</p>
-            </div>
-            <div className="w-px h-12 bg-gray-800" />
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <Cloud className="w-5 h-5 text-blue-500" />
-                <span className="text-sm font-mono text-gray-500">
-                  Providers
-                </span>
-              </div>
-              <p className="text-2xl font-bold text-gray-100">2</p>
-            </div>
-            <div className="w-px h-12 bg-gray-800" />
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <Container className="w-5 h-5 text-purple-500" />
-                <span className="text-sm font-mono text-gray-500">
-                  Containers
-                </span>
-              </div>
-              <p className="text-2xl font-bold text-gray-100">4</p>
-            </div>
-            <div className="w-px h-12 bg-gray-800" />
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <DollarSign className="w-5 h-5 text-green-500" />
-                <span className="text-sm font-mono text-gray-500">
-                  Monthly Cost
-                </span>
-              </div>
-              <p className="text-2xl font-bold text-gray-100">$2.00</p>
-            </div>
+          <div className="pt-2">
+            <p className="text-sm text-gray-500 font-mono">
+              IV ACSAD • Cloud Computing Course • University of Makati
+            </p>
           </div>
         </div>
       </div>

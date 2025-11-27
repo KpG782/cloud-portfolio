@@ -8,13 +8,22 @@ interface StatCardProps {
 export const StatCard: React.FC<StatCardProps> = ({ stat }) => {
   const Icon = stat.icon;
 
+  // Extract colors from gradient string for icon styling
+  const getIconColor = (colorString: string) => {
+    if (colorString.includes("green")) return "text-green-400";
+    if (colorString.includes("blue")) return "text-blue-400";
+    if (colorString.includes("purple")) return "text-purple-400";
+    if (colorString.includes("orange")) return "text-orange-400";
+    return "text-gray-400";
+  };
+
   return (
     <div className="bg-[#161b22] border border-gray-800/50 rounded-lg p-6 hover:border-gray-700/50 transition-all">
       <div className="flex items-center gap-4 mb-4">
         <div
           className={`w-12 h-12 rounded-lg ${stat.bgColor} flex items-center justify-center shrink-0`}
         >
-          <Icon className={`w-6 h-6 bg-linear-to-br ${stat.color} bg-clip-text text-transparent`} />
+          <Icon className={`w-6 h-6 ${getIconColor(stat.color)}`} />
         </div>
         <div className="flex-1">
           <p className="text-3xl font-bold text-gray-100 mb-1">{stat.value}</p>
