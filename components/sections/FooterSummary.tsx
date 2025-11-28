@@ -23,9 +23,7 @@ export const FooterSummary: React.FC = () => {
               />
             </svg>
           </div>
-          <h3 className="text-2xl font-bold text-gray-100">
-            Special Thanks
-          </h3>
+          <h3 className="text-2xl font-bold text-gray-100">Special Thanks</h3>
           <p className="text-base text-gray-400 leading-relaxed">
             Grateful acknowledgment to{" "}
             <a

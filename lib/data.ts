@@ -131,7 +131,7 @@ export const projects: Project[] = [
     icon: Map,
     color: "from-violet-500 to-purple-600",
     bgGlow: "bg-violet-500/5",
-    demoUrl: "#",
+    demoUrl: "https://terraquest-zeta.vercel.app/",
     githubUrl: "https://github.com/KpG782/terraquest",
     description:
       "Interactive 3D map for learning Terraform with 9 geographical regions, cinematic camera animations, and gamified progress tracking - transforming IaC education into an immersive journey",
